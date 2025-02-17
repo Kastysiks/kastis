@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Футуристичная открытка + Консоль на весь экран</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+    rel="stylesheet"
+  >
+  <link 
+    href="https://fonts.googleapis.com/css?family=Solitreo&display=swap" 
+    rel="stylesheet"
+  >
+
+  <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <script
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"
+    defer
+  ></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="fallingCanvas"></canvas>
+
+  <section class="section timer-section" id="section1">
+    <div class="timer-container">
+      <h1>Мы знакомы уже</h1>
+      <div id="relationshipTimer" class="timer-value"></div>
+      <div class="scroll-down" id="scrollDownBtn">▼ Листай ниже ▼</div>
+    </div>
+  </section>
+
+  <section class="section middle" id="section2">
+    <div class="section-content">
+      <h2>Немного милоты :3</h2>
+      <p>Наведись мышью на конвертик</p>
+
+      <div class="envelope-container">
+        <div class="container">
+          <div class="envelope"></div>
+          <div class="card">
+            <h1 class="message">
+             Соси жопу <br>
+            я любя 💗.
+            </h1>
+            <div class="heart"></div>
+          </div>
+          <div class="cover"></div>
+          <div class="lid"></div>
+          <div class="shadow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section console-section" id="section3">
+    <div class="console-container">
+      <header class="console-header console-wrapper">
+        <div class="console-logotype">console.love();</div>
+      </header>
+
+      <main class="console-main console-wrapper">
+        <section class="console-window">
+          <div class="console-window__options">
+            <div class="dots">
+              <span class="dot"></span>
+              <span class="dot dot--middle"></span>
+              <span class="dot dot--left"></span>
+            </div>
+            <button id="refresh-btn" class="btn refresh">
+              <i class="fa fa-refresh"></i>
+            </button>
+          </div>
+
+          <div class="console-window__body">
+            <ul>
+              <li class="line console">
+                > console.love(pickupLines[<span id="pickup-id">0</span>]);
+              </li>
+              <li id="pickup-line" class="line">
+               Тыкни лох
+              </li>
+            </ul>
+            <p class="console-instruction console-mobile">
+              Нажмите «refresh», чтобы показать другую строку
+            </p>
+          </div> 
+        </section>
+      </main>
+    </div>
+  </section>
+
+  <section class="section" id="section4">
+    <div class="section-content">
+      <h2>ЗАВИСИММ?? Я ЗНАЮЮЮ....</h2>
+      <p>ФОТАЧКИИИ :3</p>
+
+      <div class="album-cover">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://i.imgur.com/sRA8hjs.jpeg" 
+                alt="cover1" />
+              <div class="overlay">
+                <a
+                  href="https://www.youtube.com/watch?v=aatr_2MstrI"
+                  target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://i.imgur.com/9tIVZgr.jpeg" 
+                alt="cover2"/>
+              <div class="overlay">
+                <a
+                  href="https://www.youtube.com/watch?v=qEnfeG8uBRY"
+                  target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://i.imgur.com/6qnz1iL.jpeg"
+                alt="cover3" />
+              <div class="overlay">
+                <a
+                  href="https://www.youtube.com/watch?v=LgsaD-vNJ9M"
+                  target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://i.imgur.com/B6wmzRn.jpeg"
+                alt="cover4" />
+              <div class="overlay">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://i.imgur.com/nbpvdgX.jpeg"
+                alt="cover5" />
+              <div class="overlay">
+                <a
+                  href="https://www.youtube.com/watch?v=H5v3kku4y6Q"
+                  target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://go.zvuk.com/imgs/2023/08/28/14/6118481/2dd8666a9d032d16871b96164e5d89e9aa149bf3.jpg"
+                alt="cover6" />
+              <div class="overlay">
+                <a
+                  href="https://www.youtube.com/watch?v=9HDEHj2yzew"
+                  target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://go.zvuk.com/imgs/2022/05/27/10/5423881/75f72b1ba414b51d347cbf2e8161f8762d76d009.jpg"
+                alt="cover7" />
+              <div class="overlay">
+                <a
+                  href="https://www.youtube.com/watch?v=tCXGJQYZ9JA"
+                  target="_blank"
+                ><ion-icon name="logo-youtube"></ion-icon></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="music-player">
+        <h1>Title</h1>
+        <p>Song Name</p>
+
+        <audio id="song">
+          <source src="song-list/Luke-Bergs-Gold.mp3" type="audio/mpeg" />
+        </audio>
+
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <button class="backward">
+            <i class="fa fa-backward"></i>
+          </button>
+          <button class="play-pause-btn">
+            <i class="fa fa-play" id="controlIcon"></i>
+          </button>
+          <button class="forward">
+            <i class="fa fa-forward"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script 
+    src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
